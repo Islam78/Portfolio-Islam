@@ -13993,7 +13993,7 @@ textarea.form-control {
 .owl-carousel .owl-nav .owl-next p span,
 .owl-carousel .owl-nav .owl-next p small {
   display: block;
-  color: white;
+  /* color: white; */
   margin-left: -18px;
   line-height: .8;
   -webkit-transition: 0.3s;
@@ -14043,12 +14043,12 @@ textarea.form-control {
 
 .owl-carousel .owl-nav .owl-prev:hover small,
 .owl-carousel .owl-nav .owl-next:hover small {
-  color: rgb(255, 189, 57);
+  /* color: rgb(255, 189, 57); */
 }
 
 .owl-carousel .owl-nav .owl-prev:hover span:before,
 .owl-carousel .owl-nav .owl-next:hover span:before {
-  color: rgb(255, 189, 57);
+  /* color: rgb(255, 189, 57); */
 }
 
 .owl-carousel .owl-nav .owl-prev {
