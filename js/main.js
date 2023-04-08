@@ -63,18 +63,7 @@ AOS.init({
 
 	};
 	burgerMenu();
-	// closeBurger Menu
-	var closeBurgerMenu = function () {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function (event) {
-
-			console.log('cossssssssssse');
-			$(this).removeClass('active');
-
-		});
-
-	};
-	closeBurgerMenu();
 
 	var onePageClick = function () {
 
@@ -170,9 +159,11 @@ AOS.init({
 				if (!navbar.hasClass('awake')) {
 					navbar.addClass('awake');
 				}
-
+				
 				if (sd.length > 0) {
-					sd.addClass('sleep');
+					
+					// sd.addClass('sleep');
+
 				}
 			}
 			if (st < 350) {
@@ -306,3 +297,50 @@ AOS.init({
 
 })(jQuery);
 
+
+
+// test
+
+(function($) {
+
+	"use strict";
+
+	var fullHeight = function() {
+
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.js-fullheight').css('height', $(window).height());
+		});
+
+	};
+	fullHeight();
+
+	var carousel = function() {
+		$('.featured-carousel').owlCarousel({
+	    loop:true,
+	    autoplay: true,
+	    margin:30,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+	    nav:true,
+	    dots: true,
+	    autoplayHoverPause: false,
+	    items: 1,
+	    navText : ["<p><small>Prev</small><span class='ion-ios-arrow-round-back'></span></p>","<p><small>Next</small><span class='ion-ios-arrow-round-forward'></span></p>"],
+	    responsive:{
+	      0:{
+	        items:1
+	      },
+	      600:{
+	        items:1
+	      },
+	      1000:{
+	        items:1
+	      }
+	    }
+		});
+
+	};
+	carousel();
+
+})(jQuery);
